@@ -27,6 +27,7 @@
             background-color: var(--light);
             color: var(--text);
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         header {
@@ -101,10 +102,10 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80');
             background-size: cover;
             background-position: center;
-            height: 80vh;
+            height: 85vh;
             display: flex;
             align-items: center;
             text-align: center;
@@ -243,7 +244,7 @@
         }
 
         .stat-item h3 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             color: var(--dark);
             margin-bottom: 0.5rem;
         }
@@ -423,32 +424,15 @@
         }
 
         @media (max-width: 992px) {
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .initiatives-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .footer-content {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .about-content { grid-template-columns: 1fr; }
+            .initiatives-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-content { grid-template-columns: repeat(2, 1fr); }
+            .stats { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.1rem; }
             nav ul {
                 display: none;
                 position: absolute;
@@ -461,36 +445,12 @@
                 text-align: center;
                 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
             }
-            
-            nav ul.active {
-                display: flex;
-            }
-            
-            nav ul li {
-                margin: 0;
-                padding: 0.8rem 0;
-            }
-            
-            .mobile-menu {
-                display: block;
-            }
-            
-            .initiatives-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Animation for stats counter */
-        .counter {
-            transition: all 0.5s ease;
+            nav ul.active { display: flex; }
+            nav ul li { margin: 0; padding: 0.8rem 0; }
+            .mobile-menu { display: block; }
+            .initiatives-grid { grid-template-columns: 1fr; }
+            .footer-content { grid-template-columns: 1fr; }
+            .stats { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -535,7 +495,7 @@
             </div>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Team planting trees">
+                    <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Team planting trees">
                 </div>
                 <div class="about-text">
                     <h3>Our Mission</h3>
@@ -580,7 +540,7 @@
             <div class="initiatives-grid">
                 <div class="initiative-card">
                     <div class="initiative-img">
-                        <img src="https://dialogue.earth/content/uploads/2021/04/lessons-from-the-rush-to-reforest-china-dialogue-2400x1599.jpg" alt="Reforestation">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Reforestation">
                     </div>
                     <div class="initiative-content">
                         <h3>Global Reforestation</h3>
@@ -590,7 +550,7 @@
                 </div>
                 <div class="initiative-card">
                     <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Ocean Conservation">
+                        <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80" alt="Ocean Conservation">
                     </div>
                     <div class="initiative-content">
                         <h3>Ocean Conservation</h3>
@@ -600,7 +560,7 @@
                 </div>
                 <div class="initiative-card">
                     <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="Renewable Energy">
+                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80" alt="Renewable Energy">
                     </div>
                     <div class="initiative-content">
                         <h3>Renewable Energy</h3>
@@ -663,7 +623,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Green Network. All rights reserved.</p>
+                <p>&copy; 2026 Green Network. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -674,49 +634,61 @@
             document.querySelector('nav ul').classList.toggle('active');
         });
 
-        // Counter Animation
-        function animateCounters() {
+        // Counter Animation (Fixed & Smooth with IntersectionObserver)
+        const animateCounters = () => {
             const counters = document.querySelectorAll('.counter');
-            const speed = 200; // The lower the slower
-            
             counters.forEach(counter => {
                 const target = +counter.getAttribute('data-target');
-                const count = +counter.innerText;
-                
-                const inc = target / speed;
-                
-                if(count < target) {
-                    counter.innerText = Math.ceil(count + inc);
-                    setTimeout(animateCounters, 1);
-                } else {
-                    counter.innerText = target;
+                const duration = 2000;
+                const startTime = performance.now();
+
+                const updateCount = (currentTime) => {
+                    const elapsedTime = currentTime - startTime;
+                    const progress = Math.min(elapsedTime / duration, 1);
+                    const currentCount = Math.floor(progress * target);
+
+                    counter.innerText = currentCount.toLocaleString();
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        counter.innerText = target.toLocaleString();
+                    }
+                };
+                requestAnimationFrame(updateCount);
+            });
+        };
+
+        // Trigger animation only when section comes into view
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    obs.unobserve(entry.target);
                 }
             });
-        }
+        }, { threshold: 0.3 });
 
-        // Initialize counters when page loads
-        window.addEventListener('load', animateCounters);
+        const statsSection = document.querySelector('.stats');
+        if (statsSection) observer.observe(statsSection);
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
+                if (targetId === '#') return;
+
                 const targetElement = document.querySelector(targetId);
-                if(targetElement) {
+                if (targetElement) {
+                    e.preventDefault();
                     window.scrollTo({
-                        top: targetElement.offsetTop - 80,
+                        top: targetElement.offsetTop - 70,
                         behavior: 'smooth'
                     });
-                    
                     document.querySelector('nav ul').classList.remove('active');
                 }
             });
         });
     </script>
 </body>
-
 </html>
